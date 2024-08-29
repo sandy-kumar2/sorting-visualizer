@@ -4,7 +4,7 @@ import "./SortingVisualizer.css";
 
 const SortingVisualizer = () => {
   const [array, setArray] = useState([]);
-  const [size, setSize] = useState(50); // Initialize with a default size
+  const [size, setSize] = useState(); // Initialize with a default size
   const [time, setTime] = useState(null);
   const [searchValue, setSearchValue] = useState("");
   const [searchResult, setSearchResult] = useState(null);
@@ -15,7 +15,7 @@ const SortingVisualizer = () => {
       return;
     }
     const newArray = Array.from({ length: size }, () =>
-      Math.floor(Math.random() * 500)
+      Math.floor(Math.random() * 100001)
     );
     setArray(newArray);
     setTime(null); // Reset time when a new array is generated

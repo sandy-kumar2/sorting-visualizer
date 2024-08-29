@@ -10,12 +10,12 @@ const SortingVisualizer = () => {
   const [searchResult, setSearchResult] = useState(null);
 
   const generateArray = () => {
-    if (!size || size < 5 || size > 100000) {
+    if (!size || size < 5 || size > 1000) {
       alert("Please enter a valid array size between 5 and 1000.");
       return;
     }
     const newArray = Array.from({ length: size }, () =>
-      Math.floor(Math.random() * 100001)
+      Math.floor(Math.random() * 500)
     );
     setArray(newArray);
     setTime(null); // Reset time when a new array is generated

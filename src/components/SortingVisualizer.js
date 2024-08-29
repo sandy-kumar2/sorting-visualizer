@@ -3,9 +3,12 @@ import ArrayBar from "./ArrayBar";
 import "./SortingVisualizer.css";
 
 const SortingVisualizer = () => {
+  //sorting logic
   const [array, setArray] = useState([]);
   const [size, setSize] = useState(); // Initialize with a default size
   const [time, setTime] = useState(null);
+
+  //seraching logic
   const [searchValue, setSearchValue] = useState("");
   const [searchResult, setSearchResult] = useState(null);
 
@@ -22,6 +25,7 @@ const SortingVisualizer = () => {
     setSearchResult(null); // Reset search results
   };
 
+  //time to measure each sorting algo to sort the array
   const measureTime = (operation) => {
     const startTime = performance.now();
     operation();

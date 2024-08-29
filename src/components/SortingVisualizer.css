@@ -1,0 +1,52 @@
+.sorting-visualizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls label {
+  margin-right: 10px;
+}
+
+.controls input {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.controls button {
+  padding: 5px 10px;
+}
+
+.array-container {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.array-bar {
+  width: 20px;
+  margin: 0 2px;
+  background-color: teal;
+  transition: height 0.3s;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+p {
+  font-weight: bold;
+}

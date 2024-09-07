@@ -1,3 +1,5 @@
+/* SortingVisualizer.css */
+
 .sorting-visualizer {
   display: flex;
   flex-direction: column;
@@ -20,6 +22,15 @@
 
 .controls button {
   padding: 5px 10px;
+  background-color: #007bff; /* Blue color for generate button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 .array-container {
@@ -45,6 +56,66 @@
 .buttons button {
   padding: 10px 20px;
   font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.buttons button svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.btn-bubble {
+  background-color: #ff5733; /* Example color for Bubble Sort */
+}
+
+.btn-selection {
+  background-color: #33cfff; /* Example color for Selection Sort */
+}
+
+.btn-merge {
+  background-color: #4caf50; /* Example color for Merge Sort */
+}
+
+.btn-quick {
+  background-color: #ffeb3b; /* Example color for Quick Sort */
+}
+
+.btn-insertion {
+  background-color: #ff9800; /* Example color for Insertion Sort */
+}
+
+.btn-search {
+  background-color: #9c27b0; /* Example color for Search button */
+}
+
+.buttons button:hover {
+  opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search button {
+  padding: 5px 10px;
+  background-color: #9c27b0; /* Same color as search button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  opacity: 0.8; /* Slightly transparent on hover */
 }
 
 p {

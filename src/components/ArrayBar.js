@@ -6,7 +6,7 @@ const ArrayBar = ({ value }) => {
     <div className="array-bar-container">
       <div
         className="array-bar"
-        style={{ height: `${value}px` }} // Set height dynamically
+        style={{ height: `${value}px` }} 
       />
       <div className="array-bar-label">{value}</div>
     </div>

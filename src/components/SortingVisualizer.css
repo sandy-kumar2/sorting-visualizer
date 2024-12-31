@@ -64,6 +64,10 @@
   align-items: center;
 }
 
+.btn-generate {
+  background-color: #fbc02d !important; /* Force color application */
+}
+
 .buttons button svg {
   margin-right: 8px; /* Space between icon and text */
 }

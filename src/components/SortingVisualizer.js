@@ -212,7 +212,7 @@ const SortingVisualizer = () => {
           min="5"
           max="1000"
         />
-        <button onClick={generateArray} className="btn-generate">
+        <button className="btn-generate" onClick={generateArray}>
           Generate Array
         </button>
       </div>
@@ -222,20 +222,20 @@ const SortingVisualizer = () => {
         ))}
       </div>
       <div className="buttons">
-        <button onClick={bubbleSort} className="btn-sort btn-bubble">
-          <FaSortNumericDown /> Bubble Sort
+        <button className="btn-bubble" onClick={bubbleSort}>
+          Bubble Sort
         </button>
-        <button onClick={selectionSort} className="btn-sort btn-selection">
-          <FaSortAmountDown /> Selection Sort
+        <button className="btn-selection" onClick={selectionSort}>
+          Selection Sort
         </button>
-        <button onClick={mergeSort} className="btn-sort btn-merge">
-          <FaSortAmountUp /> Merge Sort
+        <button className="btn-merge" onClick={mergeSort}>
+          Merge Sort
         </button>
-        <button onClick={quickSort} className="btn-sort btn-quick">
-          <FaSort /> Quick Sort
+        <button className="btn-quick" onClick={quickSort}>
+          Quick Sort
         </button>
-        <button onClick={insertionSort} className="btn-sort btn-insertion">
-          <FaSort /> Insertion Sort
+        <button className="btn-insertion" onClick={insertionSort}>
+          Insertion Sort
         </button>
       </div>
       <div className="search">
@@ -245,7 +245,7 @@ const SortingVisualizer = () => {
           onChange={(e) => setSearchValue(e.target.value)}
           placeholder="Enter value to search"
         />
-        <button onClick={handleSearch} className="btn-search">
+        <button className="btn-search" onClick={handleSearch}>
           Search
         </button>
         {searchResult && (

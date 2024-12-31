@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import ArrayBar from "./ArrayBar";
 import "./SortingVisualizer.css";
-import {
-  FaSort,
-  FaSortAmountDown,
-  FaSortAmountUp,
-  FaSortNumericDown,
-} from "react-icons/fa";
 
 const SortingVisualizer = () => {
   //sorting logic

@@ -8,7 +8,7 @@ const SortingVisualizer = () => {
   const [size, setSize] = useState(); // Initialize with a default size
   const [time, setTime] = useState(null);
 
-  //seraching logic
+  //searching logic
   const [searchValue, setSearchValue] = useState("");
   const [searchResult, setSearchResult] = useState(null);
 
@@ -168,12 +168,11 @@ const SortingVisualizer = () => {
         right = mid - 1;
       }
     }
-
     return -1;
   };
 
   const handleSearch = () => {
-    if (searchValue === "") {
+    if (searchValue === "") {r
       alert("Please enter a value to search.");
       return;
     }
